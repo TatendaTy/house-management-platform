@@ -72,7 +72,7 @@
   overflow: hidden; /* hide the overflowing image */
   border-radius: 15rem 15rem 0 0; /* 50% rounded corners on the top */
   border: 8px solid rgba(255, 255, 255, 0.12);
-  margin-left: -60px;
+  margin-left: 0;
 }
 
 .image-container > img {

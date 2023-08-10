@@ -1,5 +1,4 @@
 [
-  [
   {
     "name": "Luxury Apartments",
     "price": "89,500",
@@ -36,6 +35,4 @@
     "detail": "USIU Road, Nairobi",
     "image": "./res6.png"
   }
-]
-
 ]
