@@ -1,0 +1,25 @@
+.v-container .image-container {
+  border: 8px solid rgb(232 232 232 / 93%);
+}
+
+.v-container > div {
+  /* target the left and right side div elements */
+  flex: 1;
+}
+
+.v-right {
+  gap: 0.5rem;
+}
+
+.accordion {
+  margin-top: 2rem;
+  border: none;
+}
+
+.accordionItem {
+  background: #ffffff;
+  border: 0.8px none rgba(128, 128, 128, 0.143);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
