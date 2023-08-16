@@ -26,7 +26,7 @@ const Value = () => {
 
                 {/* right side */}
                 <div className="flexColStart v-right">
-                    <span className="orangeText">Our Values</span>
+                    <span className="orangeText">Our Value</span>
                     <span className="primaryText">Our shared values with you</span>
                     <span className="secondaryText">Always ready to assist whenever you
                         <br /> need a roof above your head.</span>
@@ -41,7 +41,7 @@ const Value = () => {
                                 return (
                                     <AccordionItem className="accordionItem" key={i} uuid={i}>
                                         <AccordionItemHeading>
-                                            <AccordionItemButton>
+                                            <AccordionItemButton className="accordionButton">
                                                 <div className="flexCenter icon">{item.icon}</div>
                                                 <span className="primaryText">{item.heading}</span>
                                                 <div className="flexCenter icon">
