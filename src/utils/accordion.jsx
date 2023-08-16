@@ -8,8 +8,8 @@ const data = [
       "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim.",
   },
   {
-    icon: <MdCancel />,
-    heading: "Best and affordable prices",
+    icon: <HiShieldCheck />,
+    heading: "Name your price",
     detail:
       "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim.",
   },

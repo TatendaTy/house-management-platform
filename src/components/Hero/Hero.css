@@ -1,8 +1,7 @@
 .hero-wrapper {
-  color: white;
+  color: #ffffff;
   position: relative;
   padding-bottom: 2rem;
-  background-color: var(--cyan-blue);
 }
 
 .hero-container {
@@ -22,7 +21,7 @@
 
 .hero-title > h1 {
   font-weight: 600;
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   line-height: 4rem;
 }
 

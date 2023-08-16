@@ -1,5 +1,4 @@
 .h-wrapper {
-  background: var(--black);
   color: white;
 }
 
@@ -10,10 +9,11 @@
   color: var(--secondary);
 }
 
+
 .h-menu {
   gap: 2rem;
 }
 
-.h-menu > *:hover {
+.h-menu>*:hover {
   cursor: pointer;
 }
