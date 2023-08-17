@@ -24,27 +24,38 @@
   margin-bottom: 20px;
 }
 
-.accordionItem.expanded{
+.accordionItem.expanded {
   box-shadow: var(--shadow);
   border-radius: 6px;
 }
 
-.accordionButton{
-   background: #ffffff;
-   padding: 1rem;
-   width: 100%;
-   justify-content: space-between;
-   cursor: pointer;
+.accordionButton {
+  background: #ffffff;
+  padding: 1rem;
+  width: 100%;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
-.icon{
+.icon {
   padding: 10px;
   background: #eeeeff;
   border-radius: 5px;
 }
-.icon svg{
+.icon svg {
   fill: var(--blue);
 }
-.accordionButton .primaryText{
+.accordionButton .primaryText {
   font-size: 1.1rem;
+}
+
+@media (max-width: 1024px) {
+  .v-container {
+    flex-direction: column;
+  }
+  @media (max-width: 768px) {
+    .accordionButton .primaryText {
+      font-size: 0.8rem;
+    }
+  }
 }
