@@ -1,31 +1,43 @@
 import React, { useState } from "react";
 import "./Header.css";
 import { BiMenuAltRight } from "react-icons/bi";
+import { getMenuStyles } from "../../utils/common";
+import useHeaderColor from "../../hooks/useHeaderColor";
 import OutsideClickHandler from "react-outside-click-handler";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
-  const getMenuStyles = (menuOpened) => {
-    if (document.documentElement.clientWidth <= 800) {
-      return { right: !menuOpened && "-100%" };
-    }
-  };
+  const headerColor = useHeaderColor();
+
   return (
-    <section className="h-wrapper">
-      <div className="flexCenter paddings innerWidth h-container">
-        <img src="./logo.png" alt="logo" width={100} />
-        <OutsideClickHandler onOutsideClick={() => setMenuOpened(false)}>
-          <div className="flexCenter h-menu" style={getMenuStyles(menuOpened)}>
-            <a href="">Apartments</a>
-            <a href="">Our Values</a>
-            <a href="">Contact Us</a>
-            <a href="">Get Started</a>
-            <button className="button">
-              <a href="">Contact</a>
-            </button>
+    <section className="h-wrapper" style={{ background: headerColor }}>
+      <div className="flexCenter innerWidth paddings h-container">
+        {/* logo */}
+        <Link to="/">
+          <img src="./logo.png" alt="logo" width={100} />
+        </Link>
+
+        {/* menu */}
+        <OutsideClickHandler
+          onOutsideClick={() => {
+            setMenuOpened(false);
+          }}
+        >
+          <div
+            // ref={menuRef}
+            className="flexCenter h-menu"
+            style={getMenuStyles(menuOpened)}
+          >
+            <NavLink to="/properties">Properties</NavLink>
+            <a href="mailto:dennis99tatenda@gmail@gmail.com">Contact</a>
+
+            {/* login button */}
+            <button className="button">Login</button>
           </div>
         </OutsideClickHandler>
 
+        {/* for medium and small screens */}
         <div
           className="menu-icon"
           onClick={() => setMenuOpened((prev) => !prev)}
