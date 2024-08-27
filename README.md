@@ -1,5 +1,5 @@
 # house-management-platform
-Application created using the MERN Stack, visit ```https://nyumbayako.onrender.com/``` to get a peak view
+Application created using the MERN Stack
 
 ### Install the necessary dependencies using
 npm install 
